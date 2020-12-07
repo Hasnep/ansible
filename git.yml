@@ -1,0 +1,47 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Add git PPA
+      apt_repository:
+        repo: "ppa:git-core/ppa"
+
+    - name: Install basic packages
+      apt:
+        name:
+          - git
+
+    - name: Add global gitignore to global config
+      git_config:
+        name: core.excludesfile
+        scope: global
+        value: ~/.gitignore_global
+
+    - name: Add git blame ignore file to global config
+      git_config:
+        name: blame.ignoreRevsFile
+        scope: global
+        value: .git-blame-ignore-revs
+
+    - name: Set diff algorithm to histogram
+      git_config:
+        name: diff.algorithm
+        scope: global
+        value: histogram
+
+    - name: Add an unstage alias
+      git_config:
+        name: alias.unstage
+        scope: global
+        value: "reset HEAD --"
+
+    - name: Set the default branch name to main
+      git_config:
+        name: init.defaultBranch
+        scope: global
+        value: main
+
+    - name: Add name to git identity
+      git_config:
+        name: user.name
+        scope: global
+        value: Hannes  
