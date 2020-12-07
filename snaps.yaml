@@ -1,0 +1,24 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Install snaps with normal confinement
+      snap:
+        name:
+          - bitwarden
+          - chromium
+          - discord
+          - ffmpeg
+          - htop
+          - jq
+          - onefetch
+          - vlc
+        classic: no
+
+    - name: Install snaps with classic confinement
+      snap:
+        name: "{{ item }}"
+        classic: yes
+      loop:
+        - kakuone
+        - micro
+        - restic

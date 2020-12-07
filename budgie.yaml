@@ -1,0 +1,45 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Add Budgie PPA
+      apt_repository:
+        repo: ppa:ubuntubudgie/backports
+
+    - name: Install Budgie apt packages
+      apt:
+        name:
+          - budgie-applications-menu-applet
+          - budgie-appmenu-applet
+          - budgie-core
+          - budgie-desktop-environment
+          - budgie-desktop
+          - budgie-dropby-applet
+          - budgie-extras-common
+          - budgie-extras-daemon
+          - budgie-fuzzyclock-applet
+          - budgie-indicator-applet
+          - budgie-lightdm-theme-base
+          - budgie-lightdm-theme
+          - budgie-network-manager-applet
+          - budgie-previews
+          - budgie-quicknote-applet
+          - budgie-recentlyused-applet
+          - budgie-screenshot-applet
+          - budgie-showtime-applet
+          - budgie-trash-applet
+          - budgie-visualspace-applet
+          - budgie-wallpapers-focal
+          - budgie-wallpapers
+          - budgie-weathershow-applet
+          - budgie-window-shuffler
+
+    - name: Install Nemo
+      apt:
+        name: nemo
+
+    - name: Remove unused packages
+      apt:
+        name:
+          - plank
+          - nautalis
+        state: absent

@@ -1,0 +1,21 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Install Tilix
+      apt:
+        name: tilix
+
+    - name: Set Tilix as default
+      community.general.alternatives:
+        name: x-terminal-emulator
+        path: /usr/bin/tilix.wrapper
+
+    - name: Remove Gnome Termial
+      apt:
+        name: gnome-terminal
+        state: absent
+
+    - name: Install Micro text editor
+      snap:
+        name: micro
+        classic: yes

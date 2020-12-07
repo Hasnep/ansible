@@ -1,0 +1,11 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Install rclone
+      apt:
+        name:
+          - rclone
+    - name: Install restic
+      snap:
+        name: restic
+        classic: yes

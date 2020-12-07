@@ -1,0 +1,12 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Install git
+      apt:
+        name: git
+
+    - name: Clone dotfiles repo
+      git:
+        repo: "git@github.com:Hasnep/dotfiles.git"
+        dest: "~/.dotfiles"
+        bare: true

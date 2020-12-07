@@ -1,0 +1,45 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Install aptitude
+      apt:
+        name:
+          - aptitude
+
+    - name: Add PPAs
+      apt_repository:
+        repo: "{{ item }}"
+      loop:
+        - "ppa:git-core/ppa"
+        - "ppa:lutris-team/lutris"
+        - "ppa:papirus/papirus"
+        - "ppa:tista/plata-theme"
+
+    - name: Make sure basic packages are installed
+      apt:
+        name:
+          - curl
+          - software-properties-common
+
+    - name: Install user facing apt packages
+      apt:
+        name:
+          - aptitude
+          - evince
+          - htop
+          - firefox
+          - fonts-cmu
+          - gamemode
+          - git # Requires PPA
+          - ibus-rime
+          - lutris # Requires PPA
+          - neofetch
+          - openjdk-8-jdk
+          - papirus-icon-theme # Requires PPA
+          - plata-theme # Requires PPA
+          - qdirstat
+          - rclone
+          - steam
+          - tldr
+          - tuptime
+          - usb-creator-gtk
