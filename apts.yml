@@ -11,35 +11,35 @@
         repo: "{{ item }}"
       loop:
         - "ppa:git-core/ppa"
-        - "ppa:lutris-team/lutris"
         - "ppa:papirus/papirus"
         - "ppa:tista/plata-theme"
 
-    - name: Make sure basic packages are installed
+    - name: Install basic packages
       apt:
         name:
-          - curl
+          - openjdk-8-jdk
           - software-properties-common
-
-    - name: Install user facing apt packages
+   
+    - name: Install commandline packages
       apt:
         name:
-          - aptitude
-          - evince
+          - rclone
+          - neofetch
+          - git # Requires PPA
           - htop
+          - aptitude
+          - curl
+
+    - name: Install GUI packages
+      apt:
+        name:
+          - evince
           - firefox
           - fonts-cmu
-          - gamemode
-          - git # Requires PPA
           - ibus-rime
-          - lutris # Requires PPA
-          - neofetch
-          - openjdk-8-jdk
           - papirus-icon-theme # Requires PPA
           - plata-theme # Requires PPA
           - qdirstat
-          - rclone
-          - steam
           - tldr
           - tuptime
           - usb-creator-gtk

@@ -1,0 +1,13 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Add PPAs
+      apt_repository:
+        repo: "ppa:lutris-team/lutris"
+
+    - name: Install packages
+      apt:
+        name:
+          - lutris # Requires PPA
+          - gamemode
+          - steam
