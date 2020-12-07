@@ -1,0 +1,32 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Add fish PPA
+      apt_repository:
+        repo: "ppa:fish-shell/release-3"
+
+    - name: Install fish
+      apt:
+        name: fish
+
+    - name: Set default shell to fish
+      become: yes
+      user:
+        name: "{{ ansible_user_id }}"
+        shell: /usr/bin/fish
+
+    - name: Create directory for fisher install script
+      file:
+        path: /opt/fisher/
+        state: directory
+
+    - name: Get fisher install script
+      get_url:
+        url: https://git.io/fisher
+        dest: /opt/fisher/
+
+    - name: Install fisher
+      command: fish /opt/fisher/fisher.fish
+
+    - name: Update fisher
+      command: "fish -c 'fisher install jorgebucaran/fisher'"
