@@ -43,3 +43,10 @@
           - tldr
           - tuptime
           - usb-creator-gtk
+
+    - name: Remove unused packages
+      apt:
+        name:
+          - deja-dup
+          - nautilus
+        state: absent
