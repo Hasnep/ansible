@@ -10,7 +10,7 @@
           - gnupg-agent
           - software-properties-common
 
-    - name: Add docker gpg key
+    - name: Add docker GPG key
       apt_key:
         url: https://download.docker.com/linux/ubuntu/gpg
 
