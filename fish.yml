@@ -10,7 +10,7 @@
         name: fish
 
     - name: Set default shell to fish
-      become: yes
+      become: true
       user:
         name: "{{ ansible_user_id }}"
         shell: /usr/bin/fish

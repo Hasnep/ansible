@@ -36,4 +36,4 @@
       user:
         name: "{{ user }}"
         groups: docker
-        append: yes
+        append: true

@@ -18,4 +18,4 @@
     - name: Install Micro text editor
       snap:
         name: micro
-        classic: yes
+        classic: true

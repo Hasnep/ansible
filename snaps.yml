@@ -12,12 +12,12 @@
           - jq
           - onefetch
           - vlc
-        classic: no
+        classic: false
 
     - name: Install snaps with classic confinement
       snap:
         name: "{{ item }}"
-        classic: yes
+        classic: true
       loop:
         - kakuone
         - micro
