@@ -23,12 +23,14 @@
     - name: Install commandline packages
       apt:
         name:
-          - rclone
-          - neofetch
-          - git # Requires PPA
-          - htop
           - aptitude
           - curl
+          - git # Requires PPA
+          - htop
+          - jq
+          - neofetch
+          - pandoc
+          - rclone
 
     - name: Install GUI packages
       apt:
