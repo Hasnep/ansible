@@ -5,7 +5,11 @@
       apt:
         name:
           - flatpak
-          - gnome-software-plugin-flatpak # Integrate with gnome software
+
+    - name: Integrate with gnome software
+      apt:
+        name:
+          - gnome-software-plugin-flatpak
 
     - name: Add flatpak remotes
       community.general.flatpak_remote:
