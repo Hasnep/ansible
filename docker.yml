@@ -26,3 +26,14 @@
           - containerd.io
         update_cache: true
         state: latest
+
+    - name: Ensure group "docker" exists
+      group:
+        name: docker
+        state: present
+
+    - name: Add user to group "docker"
+      user:
+        name: "{{ user }}"
+        groups: docker
+        append: yes
