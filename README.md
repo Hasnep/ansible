@@ -15,5 +15,5 @@ python3 -m venv ~/.venvs/ansible
 ~/.venvs/ansible/bin/python -m pip install ansible
 
 # Run playbooks
-~/.venvs/ansible/bin/ansible-playbook *.yml 
+~/.venvs/ansible/bin/ansible-playbook --extra-vars ansible_python_interpreter="/usr/bin/python3" *.yml 
 ```
