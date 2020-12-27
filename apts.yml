@@ -13,6 +13,7 @@
         - "ppa:git-core/ppa"
         - "ppa:papirus/papirus"
         - "ppa:tista/plata-theme"
+        - "ppa:christian-boxdoerfer/fsearch-daily"
 
     - name: Install basic packages
       apt:
@@ -45,6 +46,7 @@
           - tldr
           - tuptime
           - usb-creator-gtk
+          - fsearch-trunk # Requires PPA
 
     - name: Remove unused packages
       apt:
