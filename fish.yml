@@ -28,5 +28,5 @@
     - name: Install fisher
       command: fish /opt/fisher/fisher.fish
 
-    - name: Update fisher
-      command: "fish -c 'fisher install jorgebucaran/fisher'"
+    # - name: Update fisher
+    #   command: "fish -c 'fisher install jorgebucaran/fisher'"
