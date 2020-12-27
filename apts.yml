@@ -32,6 +32,7 @@
           - neofetch
           - pandoc
           - rclone
+          - scrcpy
 
     - name: Install GUI packages
       apt:
