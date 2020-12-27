@@ -10,4 +10,4 @@
         name:
           - lutris # Requires PPA
           - gamemode
-          - steam
+          - steam-installer
