@@ -16,9 +16,8 @@
 
     - name: Install snaps with classic confinement
       snap:
-        name: "{{ item }}"
+        name:
+          - kakoune
+          - micro
+          - restic
         classic: true
-      loop:
-        - kakuone
-        - micro
-        - restic
