@@ -3,8 +3,8 @@
   tasks:
     - name: Install rclone
       apt:
-        name:
-          - rclone
+        name: rclone
+
     - name: Install restic
       snap:
         name: restic
