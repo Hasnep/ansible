@@ -1,0 +1,18 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Install requirements
+      apt:
+        name: apt-transport-https
+
+    - name: Add vscode GPG key
+      apt_key:
+        url: https://packages.microsoft.com/keys/microsoft.asc
+
+    - name: Add vscode repository
+      apt_repository:
+        repo: "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+
+    - name: Install VSCode
+      apt:
+        name: code
