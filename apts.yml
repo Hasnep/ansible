@@ -3,8 +3,7 @@
   tasks:
     - name: Install aptitude
       apt:
-        name:
-          - aptitude
+        name: aptitude
 
     - name: Add PPAs
       apt_repository:
