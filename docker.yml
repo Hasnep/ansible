@@ -9,6 +9,8 @@
           - curl
           - gnupg-agent
           - software-properties-common
+        update_cache: true
+        state: latest
 
     - name: Add docker GPG key
       apt_key:
@@ -32,8 +34,13 @@
         name: docker
         state: present
 
+    - name: get the username running the deploy
+      become: false
+      local_action: command whoami
+      register: my_user
+
     - name: Add user to group "docker"
       user:
-        name: "{{ user }}"
+        name: "{{ my_user.stdout }}"
         groups: docker
         append: true
