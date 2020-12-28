@@ -20,18 +20,16 @@
         path: /opt/fisher/
         state: directory
 
-    - name: Get fisher install script
-      get_url:
-        url: https://git.io/fisher
-        dest: /opt/fisher/
-
-    - name: Install fisher
-      command: fish /opt/fisher/fisher.fish
-
     - name: Get the username running the deploy
       become: false
       local_action: command whoami
       register: my_user
+    
+    - name: Install fisher plugin manager
+      get_url:
+        url: https://git.io/fisher
+        dest: "/home/{{ my_user.stdout }}/.config/fish/functions/fisher.fish"
+        force: true
 
     - name: Change default shell to fish 
       become: yes
