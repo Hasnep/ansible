@@ -12,6 +12,7 @@
           - jq
           - onefetch
           - vlc
+          - youtube-dl
         classic: false
 
     - name: Install snaps with classic confinement
