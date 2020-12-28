@@ -9,11 +9,9 @@
       apt:
         name:
           - budgie-applications-menu-applet
-          - budgie-appmenu-applet
           - budgie-core
           - budgie-desktop-environment
           - budgie-desktop
-          - budgie-dropby-applet
           - budgie-extras-common
           - budgie-extras-daemon
           - budgie-fuzzyclock-applet
@@ -22,15 +20,14 @@
           - budgie-lightdm-theme
           - budgie-network-manager-applet
           - budgie-previews
-          - budgie-quicknote-applet
-          - budgie-recentlyused-applet
           - budgie-screenshot-applet
-          - budgie-showtime-applet
-          - budgie-trash-applet
-          - budgie-visualspace-applet
           - budgie-wallpapers-focal
-          - budgie-wallpapers
-          - budgie-weathershow-applet
+          - budgie-wallpapers-groovy
+          - budgie-wallpapers-eoan
+          - budgie-wallpapers-disco
+          - budgie-wallpapers-cosmic
+          - budgie-wallpapers-bionic
+          - budgie-wallstreet
           - budgie-window-shuffler
 
     - name: Install Nemo
@@ -42,4 +39,17 @@
         name:
           - plank
           - nautalis
+        state: absent
+
+    - name: Remove unused budgie applets
+      apt:
+        name:
+          - budgie-appmenu-applet
+          - budgie-dropby-applet
+          - budgie-quicknote-applet
+          - budgie-recentlyused-applet
+          - budgie-showtime-applet
+          - budgie-trash-applet
+          - budgie-visualspace-applet
+          - budgie-weathershow-applet
         state: absent
