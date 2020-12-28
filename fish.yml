@@ -28,5 +28,16 @@
     - name: Install fisher
       command: fish /opt/fisher/fisher.fish
 
+    - name: Get the username running the deploy
+      become: false
+      local_action: command whoami
+      register: my_user
+
+    - name: Change default shell to fish 
+      become: yes
+      user:
+        name: "{{ my_user.stdout }}"
+        shell: /usr/bin/fish
+
     # - name: Update fisher
     #   command: "fish -c 'fisher install jorgebucaran/fisher'"
