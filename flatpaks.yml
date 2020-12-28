@@ -1,5 +1,7 @@
 - hosts: localhost
   become: true
+  environment:
+    XDG_DATA_DIRS: $HOME/.local/share/flatpak/exports/share:/var/lib.flatpak/exports/share
   tasks:
     - name: Install flatpak
       apt:
