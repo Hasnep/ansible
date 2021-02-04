@@ -29,28 +29,28 @@
       community.general.flatpak:
         name: "{{ item }}"
       loop:
-        - com.github.johnfactotum.Foliate #          Foliate
-        - com.github.PintaProject.Pinta #            Pinta
-        - com.github.tchx84.Flatseal #               Flatseal
-        - com.obsproject.Studio #                    OBS Studio
-        - com.spotify.Client #                       Spotify
-        - im.riot.riot #                             Element
-        - io.dbeaver.DBeaverCommunity #              DBeaver CE
-        - net.ankiweb.Anki #                         Anki
-        - org.audacityteam.Audacity #                Audacity
-        - org.blender.Blender #                      Blender
-        - org.flameshot.Flameshot #                  Flameshot
-        - org.glimpse_editor.Glimpse #               Glimpse
-        - org.gnome.eog #                            Eye of Gnome
-        - org.gnome.gitlab.YaLTeR.VideoTrimmer #     VideoTrimmer
-        - org.gnome.GTG #                            Getting Things Gnome
-        - org.gpodder.gpodder #                      gPodder
+        - com.github.johnfactotum.Foliate # Foliate
+        - com.github.PintaProject.Pinta # Pinta
+        - com.github.tchx84.Flatseal # Flatseal
+        - com.obsproject.Studio # OBS Studio
+        - com.spotify.Client # Spotify
+        - im.riot.riot # Element
+        - io.dbeaver.DBeaverCommunity # DBeaver CE
+        - net.ankiweb.Anki # Anki
+        - org.audacityteam.Audacity # Audacity
+        - org.blender.Blender # Blender
+        - org.flameshot.Flameshot # Flameshot
+        - org.glimpse_editor.Glimpse # Glimpse
+        - org.gnome.eog # Eye of Gnome
+        - org.gnome.gitlab.YaLTeR.VideoTrimmer # VideoTrimmer
+        - org.gnome.GTG # Getting Things Gnome
+        - org.gpodder.gpodder # gPodder
         - org.gtk.Gtk3theme.Plata-Noir/x86_64/3.24 # Plata Noir
-        - org.inkscape.Inkscape #                    Inskscape
-        - org.kde.kdenlive #                         Kdenlive
-        - org.kde.krita #                            Krita
-        - org.libreoffice.LibreOffice #              LibreOffice
-        - org.musescore.MuseScore #                  Musescore
-        - org.qbittorrent.qBittorrent #              qBittorrent
-        - org.telegram #                             Telegram
-        - org.zulip.Zulip #                          Zulip
+        - org.inkscape.Inkscape # Inskscape
+        - org.kde.kdenlive # Kdenlive
+        - org.kde.krita # Krita
+        - org.libreoffice.LibreOffice # LibreOffice
+        - org.musescore.MuseScore # Musescore
+        - org.qbittorrent.qBittorrent # qBittorrent
+        - org.telegram # Telegram
+        - org.zulip.Zulip # Zulip
