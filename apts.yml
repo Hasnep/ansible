@@ -54,4 +54,6 @@
         name:
           - deja-dup
           - nautilus
+          - magnus
+          - byobu
         state: absent
