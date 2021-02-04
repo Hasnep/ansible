@@ -36,6 +36,7 @@
     - name: Install GUI packages
       apt:
         name:
+          - epiphany-browser 
           - barrier
           - evince
           - firefox
