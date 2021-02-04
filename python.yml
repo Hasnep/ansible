@@ -3,9 +3,8 @@
   tasks:
     - name: Install Python
       apt:
-        name:
-          - python3
-         
+        name: python3
+
     - name: Install related python packages
       apt:
         name:
