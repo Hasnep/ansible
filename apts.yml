@@ -19,7 +19,7 @@
         name:
           - openjdk-8-jdk
           - software-properties-common
-   
+
     - name: Install commandline packages
       apt:
         name:
