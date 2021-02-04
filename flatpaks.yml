@@ -29,6 +29,7 @@
       community.general.flatpak:
         name: "{{ item }}"
       loop:
+        - com.github.johnfactotum.Foliate #          Foliate
         - com.github.PintaProject.Pinta #            Pinta
         - com.github.tchx84.Flatseal #               Flatseal
         - com.obsproject.Studio #                    OBS Studio
