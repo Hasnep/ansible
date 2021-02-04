@@ -7,8 +7,7 @@
 
     - name: Install basic packages
       apt:
-        name:
-          - git
+        name: git
 
     - name: Add global gitignore to global config
       git_config:
@@ -44,4 +43,4 @@
       git_config:
         name: user.name
         scope: global
-        value: Hannes  
+        value: Hannes
