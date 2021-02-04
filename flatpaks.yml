@@ -53,4 +53,5 @@
         - org.libreoffice.LibreOffice #              LibreOffice
         - org.musescore.MuseScore #                  Musescore
         - org.qbittorrent.qBittorrent #              qBittorrent
+        - org.telegram #                             Telegram
         - org.zulip.Zulip #                          Zulip
