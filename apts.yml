@@ -27,14 +27,22 @@
       apt:
         name:
           - aptitude
+          - bat
           - curl
+          - fd-find
+          - ffmpeg
+          - fzf
           - git # Requires PPA
           - htop
           - jq
+          - kakoune
+          - micro
           - neofetch
           - pandoc
           - rclone
+          - restic
           - scrcpy
+          - youtube-dl
 
     - name: Install GUI packages
       apt:

@@ -5,23 +5,7 @@
       snap:
         name:
           - bitwarden
-          - chromium
-          - discord
-          - ffmpeg
-          - htop
-          - jq
-          - onefetch
-          - vlc
-          - youtube-dl
         classic: false
-
-    - name: Install snaps with classic confinement
-      snap:
-        name:
-          - kakoune
-          - micro
-          - restic
-        classic: true
 
     - name: Remove unused snaps
       snap:
