@@ -13,6 +13,9 @@
         - ppa:papirus/papirus
         - ppa:tista/plata-theme
         - ppa:christian-boxdoerfer/fsearch-daily
+        - deb http://archive.ubuntu.com/ubuntu {{ ansible_distribution_release }} universe
+        - deb http://archive.ubuntu.com/ubuntu {{ ansible_distribution_release }} multiverse
+        - deb http://archive.ubuntu.com/ubuntu {{ ansible_distribution_release }} restricted
 
     - name: Install basic packages
       apt:
