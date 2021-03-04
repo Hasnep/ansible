@@ -9,10 +9,10 @@
       apt_repository:
         repo: "{{ item }}"
       loop:
-        - "ppa:git-core/ppa"
-        - "ppa:papirus/papirus"
-        - "ppa:tista/plata-theme"
-        - "ppa:christian-boxdoerfer/fsearch-daily"
+        - ppa:git-core/ppa
+        - ppa:papirus/papirus
+        - ppa:tista/plata-theme
+        - ppa:christian-boxdoerfer/fsearch-daily
 
     - name: Install basic packages
       apt:
