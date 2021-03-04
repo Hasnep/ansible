@@ -56,8 +56,8 @@
     - name: Remove unused packages
       apt:
         name:
-          - deja-dup
-          - nautilus
-          - magnus
           - byobu
+          - deja-dup
+          - magnus
+          - nautilus
         state: absent
