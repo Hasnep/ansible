@@ -55,7 +55,6 @@
           - firefox
           - fonts-cmu
           - fsearch-trunk # Requires PPA
-          - ibus-rime
           - papirus-icon-theme # Requires PPA
           - plata-theme # Requires PPA
           - qdirstat
