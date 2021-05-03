@@ -1,14 +1,14 @@
 - hosts: localhost
   become: true
   tasks:
-    - name: Install Tilix
+    - name: Install Kitty
       apt:
-        name: tilix
+        name: kitty
 
-    - name: Set Tilix as default
+    - name: Set Kitty as default
       community.general.alternatives:
         name: x-terminal-emulator
-        path: /usr/bin/tilix.wrapper
+        path: /usr/bin/kitty
 
     - name: Remove Gnome Termial
       apt:
