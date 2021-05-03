@@ -9,7 +9,6 @@
       apt_repository:
         repo: "{{ item }}"
       loop:
-        - ppa:git-core/ppa
         - ppa:papirus/papirus
         - ppa:tista/plata-theme
         - ppa:christian-boxdoerfer/fsearch-daily
@@ -32,7 +31,7 @@
           - fd-find
           - ffmpeg
           - fzf
-          - git # Requires PPA
+          - git
           - htop
           - jq
           - kakoune
