@@ -16,6 +16,5 @@
         state: absent
 
     - name: Install Micro text editor
-      snap:
+      apt:
         name: micro
-        classic: true
