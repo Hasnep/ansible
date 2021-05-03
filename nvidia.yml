@@ -1,0 +1,13 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Add nvidia repository
+      apt_repository:
+        repo: ppa:graphics-drivers/ppa
+
+    - name: Install drivers
+      apt:
+        name:
+          - nvidia-driver-460
+          - libvulkan1
+          - libvulkan1:i386
