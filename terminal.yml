@@ -10,7 +10,7 @@
         name: x-terminal-emulator
         path: /usr/bin/kitty
 
-    - name: Remove Gnome Termial
+    - name: Remove Gnome Terminal
       apt:
         name: gnome-terminal
         state: absent
