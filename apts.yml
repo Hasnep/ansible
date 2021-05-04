@@ -54,7 +54,7 @@
           - firefox
           - fonts-cmu
           - fsearch-trunk # Requires PPA
-          - papirus-icon-theme # Requires PPA
+          - papirus-icon-theme
           - plata-theme # Requires PPA
           - qdirstat
           - usb-creator-gtk
