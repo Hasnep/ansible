@@ -14,3 +14,4 @@
     - name: Remove unused snaps
       snap:
         name: ubuntu-budgie-welcome
+        state: absent
