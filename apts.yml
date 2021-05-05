@@ -52,6 +52,7 @@
           - epiphany-browser 
           - evince
           - firefox
+          - flameshot
           - fonts-cmu
           - fsearch-trunk # Requires PPA
           - papirus-icon-theme
