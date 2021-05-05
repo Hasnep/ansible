@@ -1,11 +1,15 @@
 - hosts: localhost
   become: true
   tasks:
-    - name: Install snaps with normal confinement
+    - name: Install Bitwarden
       snap:
         name:
           - bitwarden
         classic: false
+
+    - name: Install Onefetch
+      snap:
+        name: onefetch
 
     - name: Remove unused snaps
       snap:
