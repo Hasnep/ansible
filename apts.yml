@@ -58,6 +58,7 @@
           - papirus-icon-theme
           - plata-theme # Requires PPA
           - qdirstat
+          - transmission-gtk
           - usb-creator-gtk
 
     - name: Remove unused packages

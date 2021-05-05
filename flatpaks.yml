@@ -50,7 +50,6 @@
         - org.kde.krita # Krita
         - org.libreoffice.LibreOffice # LibreOffice
         - org.musescore.MuseScore # Musescore
-        - org.qbittorrent.qBittorrent # qBittorrent
         - org.signal.Signal # Signal
         - org.telegram # Telegram
         - org.zulip.Zulip # Zulip
