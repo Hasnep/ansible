@@ -40,6 +40,7 @@
           - pandoc
           - rclone
           - restic
+          - ripgrep
           - scrcpy
           - tldr
           - tuptime
