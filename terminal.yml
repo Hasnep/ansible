@@ -1,14 +1,10 @@
 - hosts: localhost
   become: true
   tasks:
-    - name: Install Kitty
-      apt:
-        name: kitty
-
-    - name: Set Kitty as default
+    - name: Set Alacritty as default
       community.general.alternatives:
         name: x-terminal-emulator
-        path: /usr/bin/kitty
+        path: /home/hannes/bin/alacritty
 
     - name: Remove Gnome Terminal
       apt:
