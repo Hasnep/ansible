@@ -41,6 +41,7 @@
         - org.blender.Blender # Blender
         - org.gimp.GIMP # GIMP
         - org.gnome.eog # Eye of Gnome
+        - org.gnome.Geary # Geary
         - org.gnome.gitlab.YaLTeR.VideoTrimmer # VideoTrimmer
         - org.gnome.GTG # Getting Things Gnome
         - org.gpodder.gpodder # gPodder
