@@ -45,7 +45,7 @@
         - org.gnome.gitlab.YaLTeR.VideoTrimmer # VideoTrimmer
         - org.gnome.GTG # Getting Things Gnome
         - org.gpodder.gpodder # gPodder
-        - org.gtk.Gtk3theme.Plata-Noir/x86_64/3.24 # Plata Noir
+        # - org.gtk.Gtk3theme.Plata-Noir # Plata Noir
         - org.inkscape.Inkscape # Inskscape
         - org.kde.kdenlive # Kdenlive
         - org.kde.krita # Krita
