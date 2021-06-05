@@ -39,7 +39,7 @@
         - net.ankiweb.Anki # Anki
         - org.audacityteam.Audacity # Audacity
         - org.blender.Blender # Blender
-        - org.glimpse_editor.Glimpse # Glimpse
+        - org.gimp.GIMP # GIMP
         - org.gnome.eog # Eye of Gnome
         - org.gnome.gitlab.YaLTeR.VideoTrimmer # VideoTrimmer
         - org.gnome.GTG # Getting Things Gnome
