@@ -28,6 +28,7 @@
       community.general.flatpak:
         name: "{{ item }}"
       loop:
+        - com.discordapp.Discord # Discord
         - com.github.johnfactotum.Foliate # Foliate
         - com.github.PintaProject.Pinta # Pinta
         - com.github.tchx84.Flatseal # Flatseal
