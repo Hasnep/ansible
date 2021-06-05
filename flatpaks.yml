@@ -23,7 +23,6 @@
         remotes:
           flathub: https://flathub.org/repo/flathub.flatpakrepo
           flathub-beta: https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-          kdeapps: https://distribute.kde.org/kdeapps.flatpakrepo
 
     - name: Install flatpaks from flathub
       community.general.flatpak:
