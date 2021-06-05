@@ -51,4 +51,5 @@
         - org.musescore.MuseScore # Musescore
         - org.signal.Signal # Signal
         - org.telegram # Telegram
+        - org.videolan.VLC # VLC
         - org.zulip.Zulip # Zulip
